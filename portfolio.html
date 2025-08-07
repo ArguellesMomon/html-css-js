@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio | Richmond Arguelles ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="home" class="container form-section mt-4">
+        <h2 class="text-center mb-4 retro-purple" style="font-size: 2rem;">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="Profile.jpg" alt="Richmond Arguelles" class="img-fluid rounded-circle" style="max-width: 300px;">
+            </div>
+            <div class="col-md-8">
+                <h4 class="color : retro-blue" style="font-size: 1.5rem;">Name:</h4>
+                <p>Richmond Arguelles</p>
+                <h4 class="color : retro-blue" style="font-size: 1.5rem;">Date of Birth:</h4>
+                <p>August 31, 2004</p>
+                <h4 class="color : retro-blue" style="font-size: 1.5rem;">Hobbies:</h4>
+                <ul>
+                    <li>Running</li>
+                    <li>Gaming</li>
+                    <li>Watching Movies</li>
+                    <li>Adventure</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container portfolio-section mt-4">
+        <h2 class="text-center mb-5 retro-purple" style="font-size: 1.5rem;">My Projects</h2>
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card text-dark">
+                    <img src="MoviePoster.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title project-title retro-red">Vindicta Movie</h5>
+                        <p class="card-text">A thriller movie project I produced in Senior Highschool.</p>
+                        <button class="btn neon-green-btn" data-bs-toggle="modal" data-bs-target="#project1Modal">More Details</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card text-dark">
+                    <img src="TravelBud.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title project-title retro-blue">TravelBud App</h5>
+                        <p class="card-text">UI/UX travel companion app project for HUCOINT using Figma.</p>
+                        <button class="btn neon-green-btn" data-bs-toggle="modal" data-bs-target="#project2Modal">More Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card text-dark">
+                    <img src="JeepneyGo.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title project-title retro-purple">JeepneyGo App</h5>
+                        <p class="card-text">A project proposal app that provides efficient Jeepney experience.</p>
+                        <button class="btn neon-green-btn" data-bs-toggle="modal" data-bs-target="#project3Modal">More Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="container form-section">
+        <h2 class="text-center mb-4 retro-purple" style="font-size: 1.5rem;">Contact Me</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label retro-red">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label retro-red">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="your@email.com" pattern="[^@]+@[^@]+\.[^@]+" required> </div>
+            <div class="mb-3">
+                <label for="message" class="form-label retro-red">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn neon-green-btn">Send Message</button>
+
+        </form>
+    </section>
+
+    <!-- MODALS -->
+    <!-- Project 1 Modal -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Vindicta Movie Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    "Vindicta" is a short psychological thriller we created back in senior high school. It follows the dark and chilling story of a once-silent student who, after years of relentless bullying, takes justice into his own hands — eliminating his tormentors
+                    one by one. The film explores themes of revenge, trauma, and the dangerous consequences of unchecked cruelty.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">TravelBud App Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    The concept was a social travel companion app that connects solo travelers, groups, and locals exploring Batangas. I focused on creating a clean, user-friendly interface that highlights features like trip matching, local guides, accessible itineraries,
+                    and safety verification. The design process involved user research, wireframing, and prototyping that are all centered on making travel more enjoyable, safer, and socially engaging. It was a great opportunity to combine creativity
+                    with real-world problem-solving through design. </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">JeepneyGo App Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    "JeepneyGo" is a mobile app proposal we worked on that aimed to modernize the jeepney commuting experience in the Philippines. Designed for easier daily travel, the app featured real-time tracking, estimated arrival times, route planning, and fare info
+                    all tailored to the local commuting culture. The goal was to improve convenience and safety for passengers while supporting local drivers through better route visibility. This project allowed me to explore tech-based solutions for
+                    everyday problems and highlighted the importance of user-centered design in public transport. </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- YOUR SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+/* style.css */
+
+
+/* Font for Home Section */
+
+#home {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* General Body */
+
+body {
+    background-image: url('gif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 255, 0);
+}
+
+
+/* Portfolio Section */
+
+.portfolio-section {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    transition: background-color 0.7s ease;
+}
+
+
+/* Card Hover */
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Contact Form Section */
+
+.form-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+
+/* Navbar Links */
+
+.nav-link {
+    color: white !important;
+}
+
+
+/* Neon Green Button */
+
+.neon-green-btn {
+    background-color: #39ff14;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    border: 2px solid #39ff14;
+    text-shadow: 0 0 3px #39ff14, 0 0 5px #39ff14;
+    box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+    transition: 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.neon-green-btn:hover {
+    background-color: black;
+    color: #39ff14;
+    border: 2px solid #39ff14;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+    cursor: pointer;
+}
+
+
+/* Retro Colors */
+
+.retro-red {
+    color: #ff4c4c;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #800000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+}
+
+.retro-blue {
+    color: #00d9ff;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #004466;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+}
+
+.retro-purple {
+    color: #d86bff;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #5e2a8a;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+}
+
+
+/* Card Background */
+
+.card {
+    background-color: rgb(228, 119, 255) !important;
+    color: white;
+}
