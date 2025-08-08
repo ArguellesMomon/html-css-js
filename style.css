@@ -107,6 +107,10 @@ body {
 /* Card Background */
 
 .card {
-    background-color: rgb(228, 119, 255) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     color: white;
+}
+
+.card-text {
+    color: white !important;
 }
